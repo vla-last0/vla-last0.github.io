@@ -133,5 +133,23 @@ body {
   font-size: smaller;
 }
 
+/* Logo 容器：让图片横向排列并居中 */
+.logo-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中对齐 */
+  margin-top: 20px;        /* 与上方作者名字拉开一点距离 */
+  margin-bottom: 10px;     /* 与下方机构文字拉开一点距离 */
+  flex-wrap: wrap;         /* 如果屏幕太小，允许换行 */
+}
+
+/* 单个 Logo 图片的样式控制 */
+.inst-logo {
+  height: 60px;           /* 设定统一高度，60px 比较合适，可根据需要调整 */
+  width: auto;            /* 宽度自动，保持图片比例 */
+  margin: 0 15px;         /* 图片左右的间距，防止挨得太紧 */
+  object-fit: contain;    /* 确保图片内容完整显示在框内 */
+  transition: transform 0.3s ease; /* 添加一个鼠标悬停的小动画效果（可选） */
+}
 
 
